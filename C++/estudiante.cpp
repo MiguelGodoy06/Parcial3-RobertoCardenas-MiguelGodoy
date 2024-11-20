@@ -78,7 +78,7 @@ void registrarAsistencias(Estudiante& estudiante) {
     }
 
     for (const auto& materia : estudiante.materias) {
-        std::cout << "Ingrese el estado de asistencia para " << materia << " (asistió, falta, tardanza): ";
+        std::cout << "Ingrese el estado de asistencia para " << materia << " (asistiencia, falta, tarde): ";
         std::getline(std::cin, estado);
         Asistencia asistencia = {fecha, materia, estado};
         registrarAsistencia(estudiante, asistencia);
